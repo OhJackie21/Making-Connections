@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Connections</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Delius&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="conav">
+            <div class="pfile"><h1>Profile</h1></div>
+            <div class="home""><a href="#" >Home</a></div>
+            <div class="mpfile"><a href="#" >My Profile</a></div>
+            <div class="findc"><a href="#">Find Connections</a></div>
+            <div class="signout">
+                <form action="/process">
+                    <button class="click">Sign Out</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="con2">
+        <div class="leftcon">
+            <div class="lefttop">
+                <div class="topborder">
+                    <img src="images/user.jpg" alt="user picture" class="user">
+                </div>
+                <div class="info">
+                    <h1 id="ohJ">JackieMay</h1>
+                    <p>
+                        <h3><img src="icons/map-marker.png" alt="user picture" class="mapmarker"> &nbsp Seattle</h3>
+                    </p>
+                        <br>
+                    <p>Developer | Engineer | Problem Solver</p>
+                    <p>Master of shadows and the Internet!</p>
+                        <br>
+                    <p>
+                        <img src="icons/gear.png" alt="gear" class="gear">
+                        <a href="#" onclick="change(this)">edit Profile</a>
+                    </p>
+                </div>
+            </div>
+            <div class="leftbottom">
+                <div class="leftborder">
+                    <h4>Education</h4>
+                </div>
+                <div class="education">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <h5 class="date">Oct 2022 - June 2023</h5>
+                    <h5>Triple Black belt in Python, MERN, & C#</h5>
+                </div>
+            </div>
+        </div>
+        <div class="rightcon">
+            <div class="righttop">
+                <div class="tprborder"> 
+                    <h4 class="two"><span id="num2">2</span></h4> 
+                    <h4>Connection Requests</h4>
+                </div>
+                <div class="connections">
+                    <div class="todd">
+                        <img src="images/todd-s.jpg" alt="Todd S" class="todds">
+                        &nbsp &nbsp Todd E
+                        <a href="#" onclick="accept(this)"><img src="icons/accept-circle.png" alt="accept" class="accept"></a>
+                        <a href="#" onclick="deny(this)"><img src="icons/close-circle.png" alt="close" class="deny"></a>
+                    </div>
+                    <div class="inbet" id="phil">
+                        <img src="images/phil-s.jpg" alt="Todd S" class="todds">
+                        &nbsp &nbsp Phil S
+                        <a href="#" onclick="accept2(this)"><img src="icons/accept-circle.png" alt="accept" class="acceptph"></a>
+                        <a href="#" onclick="deny2(this)"><img src="icons/close-circle.png" alt="close" class="denyph"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rbottom">
+                <div class="rightborder">
+                    <h4 class="five">500</h4>  
+                    <h4>Your Connections</h4>
+                </div>
+                <div class="friends">
+                    <div>
+                        <img src="images/adrien-s.jpg" alt="Todd S" class="todds">
+                        &nbsp &nbsp Adrien D
+                    </div>
+                    <div class="inbet"><img src="images/anne-s.jpg" alt="Annne" class="todds">
+                        &nbsp &nbsp Anne J
+                    </div>
+                    <div class="inbet"><img src="images/alayne-s.jpg" alt="Alayne" class="todds">
+                        &nbsp &nbsp Alayne T
+                    </div>
+                    <div class="inbet"><img src="images/arry-s.jpg" alt="Arry" class="todds">
+                        &nbsp &nbsp Arry Y
+                    </div>
+                </div>
+            </div>
+            <div class="view">
+                <p class=viewlink>
+                    <a href="#">View More Here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
